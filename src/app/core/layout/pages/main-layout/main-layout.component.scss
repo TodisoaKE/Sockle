@@ -1,0 +1,14 @@
+@use '../../../../../assets/scss/lib' as *;
+.sectBody{
+    @include flex-center(row, center, start);
+    height: 100vh;
+    &__main{
+        width: 100%;
+    }
+}
+.sectSider{
+    width: 250px;
+    height: 100vh;
+    background-color: $color-secondary3;
+    color: $gray-light;
+}

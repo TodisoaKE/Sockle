@@ -430,8 +430,9 @@ html {
   margin-right: auto;
 }
 
-@mixin flex-center($horizontal: center, $alignItems: center, $height: 100%) {
+@mixin flex-center($direction: row, $horizontal: center, $alignItems: center, $height: 100%) {
   display: flex;
+  flex-direction: $direction;
   justify-content: $horizontal;
   align-items: $alignItems;
   height: $height;
