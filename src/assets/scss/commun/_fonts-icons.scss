@@ -1,0 +1,49 @@
+// @use "variable";
+
+// @font-face {
+//     font-family: 'icomoon';
+//     src:  url('#{variable.$pathFontIcon}/angular-exo-oga.eot?7yaypq');
+//     src:  url('#{variable.$pathFontIcon}/angular-exo-oga.eot?7yaypq#iefix') format('embedded-opentype'),
+//       url('#{variable.$pathFontIcon}/angular-exo-oga.ttf?7yaypq') format('truetype'),
+//       url('#{variable.$pathFontIcon}/angular-exo-oga.woff?7yaypq') format('woff'),
+//       url('#{variable.$pathFontIcon}/angular-exo-oga.svg?7yaypq#angular-exo-oga') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: block;
+//   }
+  
+//   [class^="icon-"], [class*=" icon-"] {
+//     /* use !important to prevent issues with browser extensions that change fonts */
+//     font-family: 'icomoon' !important;
+//     speak: never;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     text-transform: none;
+//     line-height: 1;
+  
+//     /* Better Font Rendering =========== */
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//   }
+  
+//   .icon-icon_add:before {
+//     content: "\e900";
+//     color: #d30f3f;
+//   }
+//   .icon-icon_home:before {
+//     content: "\e901";
+//   }
+//   .icon-icon_notification:before {
+//     content: "\e902";
+//     color: #5463a9;
+//   }
+//   .icon-ico_assistance:before {
+//     content: "\e903";
+//     color: #c0cad1;
+//   }
+//   .icon-ico_FAQ:before {
+//     content: "\e904";
+//     color: white;
+//   }
+  

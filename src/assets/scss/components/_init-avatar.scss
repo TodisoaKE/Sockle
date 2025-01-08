@@ -1,0 +1,114 @@
+@use "../commun/" as *;
+
+.cntInit {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #eee;
+  .boxInit {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    color: #d30f3f;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    @include max(1600px) {
+      font-size: 45px;
+    }
+  }
+  &.initsmall,
+  &.initmedium {
+    border: 1px solid #eee;
+    .boxInit {
+      @include max(1600px) {
+        font-size: 9px;
+      }
+    }
+  }
+  &.initsmall {
+    .boxInit {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+  &.initmedium {
+    .boxInit {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  &.initlarge {
+    .boxInit {
+      font-size: 45px;
+      font-weight: 600;
+    }
+  }
+}
+
+.mat-mdc-menu-item {
+  min-height: 30px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 1px;
+    border-width: 8px 10px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
+    position: absolute;
+    top: -14px;
+    right: 13px;
+    opacity: 1;
+  }
+}
+.mat-mdc-menu-content {
+  padding: 0 !important;
+}
+.cdk-overlay-connected-position-bounding-box {
+  transform: translateY(10px);
+}
+.mat-mdc-menu-panel,
+.mat-mdc-menu-item {
+  overflow: inherit !important;
+}
+.mat-mdc-menu-item-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+.cntAvatar {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c0cad1;
+  border-radius: 50%;
+  position: relative;
+  &--sm {
+    width: 60px;
+    height: 60px;
+    .boxInit {
+      font-size: 26px !important;
+    }
+  }
+  &--lg {
+    width: 150px;
+    height: 150px;
+    border-width: 4px;
+    .boxInit {
+      font-size: 72px !important;
+    }
+  }
+}

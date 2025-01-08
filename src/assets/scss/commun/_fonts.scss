@@ -1,0 +1,88 @@
+@use "variable";
+@font-face {
+    font-family: 'Adria Grotesk';
+    src: url('#{variable.$pathFont}/AdriaGrotesk-Thin.woff2') format('woff2'),
+        url('#{variable.$pathFont}/AdriaGrotesk-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adria Grotesk';
+    src: url('#{variable.$pathFont}/AdriaGrotesk-Light.woff2') format('woff2'),
+        url('#{variable.$pathFont}/AdriaGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adria Grotesk';
+    src: url('#{variable.$pathFont}/AdriaGrotesk-Medium.woff2') format('woff2'),
+        url('#{variable.$pathFont}/AdriaGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adria Grotesk';
+    src: url('#{variable.$pathFont}/AdriaGrotesk-Regular.woff2') format('woff2'),
+        url('#{variable.$pathFont}/AdriaGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+// @font-face {
+//   font-family: "AdriaGroteskW00";
+//   src: url("#{variable.$pathFont}/AdriaGroteskW00-Light.woff2") format("woff2"),
+//     url("#{variable.$pathFont}/AdriaGroteskW00-Light.woff") format("woff");
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "AdriaGroteskW00";
+//   src: url("#{variable.$pathFont}/AdriaGroteskW00-ExtraLight.woff2")
+//       format("woff2"),
+//     url("#{variable.$pathFont}/AdriaGroteskW00-ExtraLight.woff") format("woff");
+//   font-weight: 200;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "AdriaGroteskW00";
+//   src: url("#{variable.$pathFont}/AdriaGroteskW00-Black.woff2") format("woff2"),
+//     url("#{variable.$pathFont}/AdriaGroteskW00-Black.woff") format("woff");
+//   font-weight: 900;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "AdriaGroteskW00";
+//   src: url("#{variable.$pathFont}/AdriaGroteskW00-Bold.woff2") format("woff2"),
+//     url("#{variable.$pathFont}/AdriaGroteskW00-Bold.woff") format("woff");
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "AdriaGroteskW00";
+//   src: url("#{variable.$pathFont}/AdriaGroteskW00-Regular.woff2")
+//       format("woff2"),
+//     url("#{variable.$pathFont}/AdriaGroteskW00-Regular.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "AdriaGroteskW00";
+//   src: url("#{variable.$pathFont}/AdriaGroteskW00-Medium.woff2") format("woff2"),
+//     url("#{variable.$pathFont}/AdriaGroteskW00-Medium.woff") format("woff");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }

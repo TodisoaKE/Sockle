@@ -1,0 +1,143 @@
+//path
+$pathFont: "/assets/fonts/font-family"; // path font-family
+$pathFontIcon: "../../fonts/font-icons"; // path font-family
+$pathImg: "../../images"; // path image
+
+// layout -------------------------------------------
+$container: 1200px; // width container
+$containerPadding: 0 1.5rem; // padding container
+$margin-p: 20px; // <p> : margin-buttom
+$borderRadius: 8px; // border-radius General
+$borderRadius2: $borderRadius; // border-radius seconder (optionel)
+$transition-default: all 0.3s ease-in-out; // transition General
+$boxShadow: 4px 4px 8px 0px #00000026; // box-shadow General
+
+// Primary color (chart)
+$color-primary1: #D30F3F;
+$color-primary2: #5463a9;
+$color-primary3: transparent;
+// Secondary color
+$color-secondary1: #5463a9;
+$color-secondary2: #d30f40d0;
+$color-secondary3: #202E46;
+// Text color
+$txt-color-default: #4A4B4D; // color default
+$txt-color-1: #707070;
+$txt-color-2: #414042;
+// generic color background
+$gray-dark: #f3f3f3;
+$gray-light: #c0cad1;
+$gray: #F1F1F1;
+$white: #fff;
+
+// default ------------------------------------------
+$fontFamily-default: "AdriaGroteskW00"; // font-family primary
+$fontFamily2: $fontFamily-default; // font-family secondary
+$fontIcon: "axian";
+$main-bg: $white; // background global des pages
+
+$fontSize1: 1.2rem; // font-size global
+$fontSize2: 1.4rem; // font-size global seconde
+
+$lineHeight1: 1.2; // line-height global
+$lineHeight2: 1.2; // line-height global seconde
+
+$lettreSpacing1: 0; // lettre-spacing global
+$lettreSpacing2: 0; // lettre-spacing global seconde
+
+$thin: 100; // Thin (Hairline)
+$extraLight: 200; // Extra Light (Ultra Light)
+$light: 300; // Light
+$normal: 400; // Normal
+$medium: 500; // Medium
+$semiBold: 600; // Semi Bold (Demi Bold)
+$bold: 700; // Bold
+$extraBold: 800; // Extra Bold (Ultra Bold)
+$heavy: 900; // Black (Heavy)
+
+// heading : Les balises Titre ----------------------
+// H1
+$fontSize-h1: 2.4rem;
+$marginBottom-h1: 0;
+$textTransform-h1: none;
+$color-h1: $txt-color-1;
+
+// H2
+$fontSize-h2: 1.6rem;
+$marginBottom-h2: 0;
+$textTransform-h2: uppercase;
+$color-h2: $color-primary2;
+
+// H3
+$fontSize-h3: 1.4rem;
+$marginBottom-h3: 20px;
+$textTransform-h3: uppercase;
+$color-h3: $color-primary2;
+
+// H4
+$fontSize-h4: 2.6rem;
+$marginBottom-h4: 20px;
+$textTransform-h4: uppercase;
+$color-h4: $color-primary2;
+
+// H5
+$fontSize-h5: 1.8rem;
+$marginBottom-h5: 20px;
+$textTransform-h5: uppercase;
+$color-h5: $color-primary2;
+
+// H6
+$fontSize-h6: 1.6rem;
+$marginBottom-h6: 20px;
+$textTransform-h6: uppercase;
+$color-h6: $color-primary2;
+
+// link : balise lien <a>
+$linkColor: $txt-color-default; // color par defaut
+$linkColor-hover: $color-secondary2; // color au survol
+$linkTextDecoration: none; // text-decoration
+
+// scroll : scroll bar -----------------------------
+$srollbar-thumb: $txt-color-1; // bar color
+$scrollbar-track: $gray-light; // scroll color
+$scrollbar-borderRadius: 5px; // border-radius scroll bar
+$scrollbar-boxShadow: inset 0 0 5px #ccc; // shadow intern
+$scrollbar-width: 3px; // width scrollbar
+$scrollbar-height: 6px;
+
+// btn default --------------------------------------
+$btn-fontSize: 1.6rem;
+$btn-fontWeight: 500;
+$btn-lineHeight: 1.3;
+$btn-letterSpacing: 0.8px;
+$btn-color: $white;
+$btn-textTransform: uppercase;
+$btn-bg: $color-primary1;
+$btn-padding: 1rem 2rem;
+$btn-borderRadius: 7px;
+$btn-border: 1px solid $color-primary1;
+// btn hover
+$btn-bg-hover: $color-primary1;
+
+// btn-custom (btn secondary)
+$btn2-color: $white;
+$btn2-bg: $color-primary2;
+// btn-custom (btn secondary) hover
+$btn2-bg-hover: $color-primary2;
+
+// btn-lite
+$btnLite-color: $color-primary1;
+$btnLite-bg: transparent !important;
+// btn-lite hover
+$btnLite-hover: $white;
+$btnLite-bg-hover: $color-primary1 !important;
+
+// list -------------------------------------------
+$list-paddingLeft: 20px;
+$list-marginBottom: 20px;
+$list-markerColor: $color-primary1;
+$list-markerSize: 15px;
+// list ul
+$list-style: none;
+// list ol (1,2,..)
+$list-style-ord: decimal;

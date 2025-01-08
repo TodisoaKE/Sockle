@@ -1,0 +1,83 @@
+@use "../lib" as *;
+
+.btnDefault,
+a.btnDefault {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #d30f3f;
+  text-decoration: none !important;
+  padding: 12px 20px;
+  position: relative;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  min-width: 140px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #d30f3f;
+    color: #fff !important;
+  }
+  &--lite {
+    border: 1px solid #d30f3f;
+    background: #fff;
+    color: #d30f3f !important;
+  }
+  &--arrow {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    &::after {
+      content: "\e90e";
+      display: inline-block;
+      font-family: "axian";
+      font-size: 8px;
+    }
+    &.arrow-prev {
+      flex-direction: row-reverse;
+      border-color: #9a9a9a;
+      color: #9a9a9a !important;
+      &::after {
+        scale: -1;
+      }
+      &:hover {
+        background: #9a9a9a;
+        color: #fff !important;
+      }
+    }
+  }
+  &--gray {
+    background: #e6e6e6;
+    color: #707070 !important;
+    &:hover {
+      color: #707070 !important;
+      background: #d4d4d4 !important;
+    }
+  }
+  &--success {
+    background: #4cb050;
+    color: #fff !important;
+    &:hover {
+      background: #439b45 !important;
+    }
+  }
+}
+.cntBtn {
+  .btnAction {
+    height: 100% !important;
+    width: 44px !important;
+    font-size: 30px !important;
+    background: #fff !important;
+    &:hover {
+      background: #d30f3f !important;
+    }
+  }
+}

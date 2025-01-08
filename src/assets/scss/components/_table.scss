@@ -1,0 +1,13 @@
+.cntSelect {
+  .btnDefault {
+    font-size: 12px;
+    min-width: auto;
+    padding: 10px;
+    opacity: 0.5;
+    cursor: not-allowed;
+    &.activBtn {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,225 @@
+@use "./" as *;
+
+body {
+  font-family: $fontFamily-default !important;
+  @include font-size($fontSize1);
+  color: $txt-color-default;
+  line-height: $lineHeight1;
+  letter-spacing: $lettreSpacing1;
+  font-weight: $normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontFamily2;
+  font-weight: $normal;
+  line-height: $lineHeight2;
+  letter-spacing: $lettreSpacing2;
+}
+
+h1,
+.title1 {
+  @include font-size($fontSize-h1);
+  margin-bottom: $marginBottom-h1;
+  text-transform: $textTransform-h1;
+  color: $color-h1;
+  font-weight: $light;
+}
+
+h2,
+.title2 {
+  @include font-size($fontSize-h2);
+  margin-bottom: $marginBottom-h2;
+  text-transform: $textTransform-h2;
+  color: $color-h2;
+}
+
+h3,
+.title3 {
+  @include font-size($fontSize-h3);
+  margin-bottom: $marginBottom-h3;
+  text-transform: $textTransform-h3;
+  color: $color-h3;
+}
+
+h4,
+.title4 {
+  @include font-size($fontSize-h4);
+  margin-bottom: $marginBottom-h4;
+  text-transform: $textTransform-h4;
+  color: $color-h4;
+}
+
+h5,
+.title5 {
+  @include font-size($fontSize-h5);
+  margin-bottom: $marginBottom-h5;
+  text-transform: $textTransform-h5;
+  color: $color-h5;
+}
+
+h6,
+.title6 {
+  @include font-size($fontSize-h6);
+  margin-bottom: $marginBottom-h6;
+  text-transform: $textTransform-h6;
+  color: $color-h6;
+}
+
+a {
+  color: $linkColor;
+  text-decoration: $linkTextDecoration;
+  transition: $transition-default;
+  cursor: pointer;
+
+  &:hover {
+    color: $linkColor-hover;
+    text-decoration: $linkTextDecoration;
+  }
+}
+
+strong,
+b {
+  font-weight: $bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+// scrollbar
+body * {
+  scrollbar-color: $srollbar-thumb transparent;
+  scrollbar-width: thin;
+}
+
+body *:hover {
+  scrollbar-color: $srollbar-thumb transparent;
+}
+
+body *::-webkit-scrollbar {
+  width: $scrollbar-width;
+  height: $scrollbar-height;
+}
+
+body *::-webkit-scrollbar-track {
+  box-shadow: $scrollbar-boxShadow;
+  background: $scrollbar-track;
+  border-radius: $scrollbar-borderRadius;
+}
+
+body *::-webkit-scrollbar-thumb {
+  background: $srollbar-thumb;
+  border-radius: $scrollbar-borderRadius;
+}
+
+body *:hover::-webkit-scrollbar-thumb {
+  background: $srollbar-thumb;
+  border-radius: $scrollbar-borderRadius;
+}
+
+p {
+  margin-bottom: $margin-p;
+}
+
+.container {
+  max-width: $container;
+  @include centerMargin();
+  @include padding($containerPadding);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+
+  // padding-left: $list-paddingLeft;
+  // margin-bottom: $list-marginBottom;
+  li {
+    &::marker {
+      color: $list-markerColor;
+      font-size: $list-markerSize;
+      line-height: 1;
+    }
+  }
+}
+
+ul {
+  list-style-type: $list-style;
+}
+
+ol {
+  list-style-type: $list-style-ord;
+}
+
+#mainWrapper {
+  @include padding(0 0 6rem);
+
+  @include max(992px) {
+    padding-top: 0;
+  }
+}
+
+.headerContainer {
+  width: 97%;
+  height: 100%;
+  @include centerMargin();
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 30px;
+  top: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    border: 6px solid transparent;
+    border-top-color: #C0CAD1;
+    transform: translateY(-50%);
+    margin-left: 10px;
+  }
+}
+
+.chevron {
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    height: 7px;
+    transform: rotate(45deg);
+    width: 7px;
+    @include margin-right(10px);
+  }
+}
+
+.container {
+  width: 70%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.p-card.p-component{
+  @include padding(1.5rem)
+}
