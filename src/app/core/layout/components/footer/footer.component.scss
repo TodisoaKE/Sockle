@@ -1,0 +1,4 @@
+@use '../../../../../assets/scss/lib' as *;
+.footerContent{
+    @include flex-center(row, space-between, start);
+}

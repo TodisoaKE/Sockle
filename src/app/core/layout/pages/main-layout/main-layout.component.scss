@@ -12,3 +12,19 @@
     background-color: $color-secondary3;
     color: $gray-light;
 }
+.sectHeader{
+    height: 60px;
+    background-color: $gray-dark;
+    border-bottom: 1px solid $gray-light;
+    box-shadow: $boxShadow;
+}
+.mainBodyContent{
+    display: flex;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    overflow-y: scroll;
+    @include padding(10px 0);
+}
+.sectFooter{
+    margin-top: auto;
+}
