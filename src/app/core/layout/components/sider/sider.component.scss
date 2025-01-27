@@ -1,0 +1,59 @@
+@use '../../../../../assets/scss/lib' as *;
+
+.sectNav{
+    @include flex-center(column, space-between, start);
+    @include padding(20px 0);
+
+    &__navigation {
+        width: 100%;
+    }
+}
+.navidation{
+    width: 100%;
+}
+.navigationListSubItem {
+    max-height: 0;
+    overflow: hidden; 
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 3s ease-in-out, opacity 3s ease-in-out, visibility 3s ease-in-out;
+
+    &__item {
+        &:hover {
+            background-color: $color-secondary2;
+        }
+    }
+
+    &--show {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+    }
+    &--active{
+        background-color: $color-secondary2;
+    }
+}
+
+.navigationLink,
+.navigationSubLink {    
+    color: $gray;
+    cursor: pointer;
+    display: block;
+    @include padding(0.7rem 0.5rem);
+    &:hover{
+        background-color: $color-secondary2;
+    }
+}
+.navigationLink{
+    &--active{
+        background-color: $color-secondary2;
+    }
+}
+.navigationSubLink{    
+    @include padding(0.6rem 1.5rem);
+}
+
+.principalLogo{
+    @include padding(0.7rem 0.5rem);
+    font-size: 20px;
+}

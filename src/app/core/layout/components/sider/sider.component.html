@@ -1,0 +1,60 @@
+<nav class="sectNav">
+    <div class="sectNav__navigation">
+        <div class="navigation">
+            <div class="navigation__logo">
+                <div class="principalLogo">
+                    <a href="">Logo</a>
+                </div>
+            </div>
+            <div class="navigation__itemList">
+                <ul 
+                    class="navigationListItem">
+                    @for (item of sidebar; track $index) {
+                        <li class="navigationListItem__item">
+                            @if (item.children.length) {
+                                <div 
+                                    class="containSublink"  
+                                >
+                                    <span class="navigationLink" (click)="onClickOnSubItems(item)" >{{item.title}}</span>
+                                    @if (item.showSubLink) {
+                                        <ul 
+                                            class="navigationListSubItem"
+                                            [class.navigationListSubItem--show]="item.showSubLink"
+                                            >
+                                            @for (child of item.children; track $index) {
+                                                <li class="navigationListSubItem__item">
+                                                    <a 
+                                                        [href]="child.url" 
+                                                        class="navigationSubLink"
+                                                        [class.navigationListSubItem--active]="child.url === _router.url"
+                                                        (click)="$event.stopPropagation()"
+                                                        >
+                                                        {{child.title}}
+                                                    </a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    }
+                                </div>
+                            }@else {
+                                <a 
+                                    [href]="item.url" 
+                                    class="navigationLink"
+                                    (click)="$event.stopPropagation()" 
+                                    [class.navigationLink--active]="item.url === _router.url"
+                                    >
+                                    {{item.title}}
+                                </a>
+                            }
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sectNav__logOut">
+        <div class="logOut">
+            <a href="#">Log out</a>
+        </div>
+    </div>
+</nav>

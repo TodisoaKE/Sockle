@@ -1,4 +1,4 @@
-@use "./" as *;
+@use "../lib" as *;
 
 body {
   font-family: $fontFamily-default !important;
@@ -209,7 +209,6 @@ ol {
 }
 
 .container {
-  width: 70%;
   height: 100%;
 }
 

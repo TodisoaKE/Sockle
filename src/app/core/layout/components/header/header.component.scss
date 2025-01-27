@@ -1,0 +1,27 @@
+@use '../../../../../assets/scss/lib' as *;
+
+.sectMenu{
+    width: 100%;
+    @include gridColumn($nb: 3, $gap: 20px);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.breadCrumb{
+    @include flex-center(row, start);
+} 
+.pageName{
+    @include flex-center(row, center);
+    text-transform: uppercase;
+} 
+.details{
+    @include flex-center(row, end);
+    gap: 10px;
+}
+
+.imgContainer{
+    @include imgContainer();
+    img{
+        @include imgFull();
+    }
+}
