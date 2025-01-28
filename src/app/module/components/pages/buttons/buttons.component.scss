@@ -1,0 +1,11 @@
+@use "../../../../../assets/scss/lib" as *;
+h1,
+.item{
+    @include margin-bottom(10px);
+}
+
+.itemList{
+    @include flex-center(row, start);
+    flex-wrap: wrap;
+    gap: 10px;
+}

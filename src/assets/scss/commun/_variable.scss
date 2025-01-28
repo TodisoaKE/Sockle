@@ -60,7 +60,7 @@ $heavy: 900; // Black (Heavy)
 $fontSize-h1: 2.4rem;
 $marginBottom-h1: 0;
 $textTransform-h1: none;
-$color-h1: $txt-color-1;
+$color-h1: $txt-color-default;
 
 // H2
 $fontSize-h2: 1.6rem;
@@ -116,6 +116,7 @@ $btn-bg: $color-primary1;
 $btn-padding: 1rem 2rem;
 $btn-borderRadius: 7px;
 $btn-border: 1px solid $color-primary1;
+$btn-gap: 4px;
 // btn hover
 $btn-bg-hover: $color-primary1;
 
