@@ -55,6 +55,12 @@ export const SIDEBAR: ISideBar[] = [
                 url: '/others/test',
                 children: []
             },
+            {
+                title: 'Ok',
+                icon: 'test',
+                url: '/others/test',
+                children: []
+            },
         ]
     }
 ]

@@ -1,6 +1,6 @@
 @use '../../../../../assets/scss/lib' as *;
 
-.sectNav{
+.sectNav {
     @include flex-center(column, space-between, start);
     @include padding(20px 0);
 
@@ -8,15 +8,15 @@
         width: 100%;
     }
 }
-.navidation{
+
+.navigation {
     width: 100%;
 }
+
 .navigationListSubItem {
-    max-height: 0;
-    overflow: hidden; 
-    opacity: 0;
-    visibility: hidden;
-    transition: max-height 3s ease-in-out, opacity 3s ease-in-out, visibility 3s ease-in-out;
+    max-height: 0; // Start collapsed
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
 
     &__item {
         &:hover {
@@ -25,35 +25,41 @@
     }
 
     &--show {
-        max-height: 500px;
-        opacity: 1;
-        visibility: visible;
+        max-height: 500px; // Enough space to expand
+        transition: max-height 0.6s ease-out;
     }
-    &--active{
+    &:not(&--show) {
+        transition: max-height 0.2s ease-in; // Faster close
+    }
+
+    &--active {
         background-color: $color-secondary2;
     }
 }
 
 .navigationLink,
-.navigationSubLink {    
+.navigationSubLink {
     color: $gray;
     cursor: pointer;
     display: block;
     @include padding(0.7rem 0.5rem);
-    &:hover{
+
+    &:hover {
         background-color: $color-secondary2;
     }
 }
-.navigationLink{
-    &--active{
+
+.navigationLink {
+    &--active {
         background-color: $color-secondary2;
     }
 }
-.navigationSubLink{    
+
+.navigationSubLink {
     @include padding(0.6rem 1.5rem);
 }
 
-.principalLogo{
+.principalLogo {
     @include padding(0.7rem 0.5rem);
     font-size: 20px;
 }
