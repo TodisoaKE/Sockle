@@ -16,10 +16,10 @@
                                     class="containSublink"  
                                 >
                                     <span class="navigationLink" (click)="onClickOnSubItems(item)" >{{item.title}}</span>
-                                    @if (item.showSubLink) {
+                                    
                                         <ul 
                                             class="navigationListSubItem"
-                                            [class.navigationListSubItem--show]="item.showSubLink"
+                                            [class]="{ 'navigationListSubItem--show': item.showSubLink }"
                                             >
                                             @for (child of item.children; track $index) {
                                                 <li class="navigationListSubItem__item">
@@ -34,7 +34,6 @@
                                                 </li>
                                             }
                                         </ul>
-                                    }
                                 </div>
                             }@else {
                                 <a 

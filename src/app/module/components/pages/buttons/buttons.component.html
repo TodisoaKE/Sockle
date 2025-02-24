@@ -33,5 +33,33 @@
                 ></p-button>
             </div>
         </div>
+        <div class="item">
+            <h2>Loading :</h2>
+            <div class="itemList">
+                <p-button
+                    icon="pi pi-check"
+                    label="Loading"
+                    [loading]="loading"
+                    [severity]="'primary'"
+                    (onClick)="loading = !loading"
+                    [size]="'small'"
+                ></p-button>
+                <p-button
+                    icon="pi pi-check"
+                    label="Loading"
+                    [loading]="loading"
+                    [severity]="'help'"
+                    (onClick)="loading = !loading"
+                ></p-button>
+                <p-button
+                    icon="pi pi-check"
+                    label="Loading"
+                    [loading]="loading"
+                    [severity]="'danger'"
+                    (onClick)="loading = !loading"
+                    [size]="'large'"
+                ></p-button>
+            </div>
+        </div>
     </div>
 </div>
